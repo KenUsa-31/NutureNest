@@ -1,0 +1,31 @@
+[
+  {
+    "topic": "Prenatal care visits",
+    "content": "Antenatal care is an opportunity to support the health and wellbeing of a pregnant person and baby, ask questions, and discuss care with a qualified provider. The World Health Organization recommends at least eight antenatal contacts to reduce perinatal mortality and improve women's experience of care. The timing and services available can vary by country, pregnancy, and clinic, so confirm a schedule with your maternity care team. You can bring questions and share any symptoms or concerns that matter to you.",
+    "source": "World Health Organization, WHO recommendations on antenatal care for a positive pregnancy experience (2016)",
+    "url": "https://www.who.int/publications/i/item/9789241549912"
+  },
+  {
+    "topic": "Getting ready for birth",
+    "content": "Preparing for birth can include talking with your maternity care team about where to go when labor begins, who to contact, transport, a support person, and what the clinic asks you to bring. Arrangements and signs of labor can differ, and this chatbot does not know a specific clinic's policies. Ask your own care team what to expect and when to contact them. It is okay to bring questions or feel uncertain while making a plan.",
+    "source": "World Health Organization, WHO recommendations: intrapartum care for a positive childbirth experience (2018)",
+    "url": "https://www.who.int/publications/i/item/9789241550215"
+  },
+  {
+    "topic": "Care after birth",
+    "content": "Postnatal care supports the health and wellbeing of the woman and newborn after birth. The World Health Organization emphasizes consistent information, reassurance, and support from health workers, while respecting each family's needs and context. Follow-up timing, recovery, feeding, newborn care, and available services depend on individual circumstances and local guidance. Contact your maternity care provider for personal questions or concerns.",
+    "source": "World Health Organization, WHO recommendations on maternal and newborn care for a positive postnatal experience (2022)",
+    "url": "https://www.who.int/publications/i/item/9789240045989"
+  },
+  {
+    "topic": "Urgent maternal warning signs",
+    "content": "Urgent warning signs can occur during pregnancy and in the year after delivery. The US Centers for Disease Control and Prevention advises seeking medical care immediately for warning signs such as trouble breathing, chest pain, severe or worsening headache, changes in vision, fever of 100.4 F (38 C) or higher, severe belly pain, heavy vaginal bleeding or fluid leaking during pregnancy, or thoughts of harming yourself or your baby. This list is not complete. If something feels seriously wrong, seek urgent medical care now and tell the care team you are pregnant or recently gave birth.",
+    "source": "US Centers for Disease Control and Prevention, Urgent Maternal Warning Signs and Symptoms (2024)",
+    "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html"
+  },
+  {
+    "topic": "A supportive companion, not a clinic",
+    "content": "NurtureNest is a fictional educational companion and does not represent a real lying-in clinic. It cannot confirm clinic locations, hours, prices, staff, delivery services, appointment availability, or emergency arrangements. Ask the specific clinic or a qualified maternity care provider for local and personal information. A companion chatbot can listen and help you prepare questions, but it cannot examine you or your baby.",
+    "source": "NurtureNest project scope and safety policy"
+  }
+]

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3155c8">
+  <meta name="description" content="NurtureNest is a supportive companion for pregnancy and postpartum questions.">
+  <title>NurtureNest | Maternity companion</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='chat.js') }}" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="NurtureNest home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span class="brand-text"><strong>NurtureNest</strong><small>MATERNITY COMPANION</small></span>
+      </a>
+      <div class="topbar-meta"><span class="live-dot"></span><span>Here to listen</span></div>
+    </header>
+
+    <main class="workspace">
+      <section class="chat-panel" aria-label="Chat with NurtureNest">
+        <div class="chat-topline">
+          <div class="companion-id"><span class="mini-mark" aria-hidden="true">N</span><span><strong>NurtureNest</strong><small>AI companion · not a clinic</small></span></div>
+          <div class="status-pill" id="assistant-state" aria-live="polite"><span class="status-dot"></span><span>Listening</span></div>
+          <button class="reset-button" id="new-chat" type="button" title="Clear this chat" aria-label="Start a new chat"><span aria-hidden="true">↻</span></button>
+        </div>
+
+        <div class="messages" id="messages" role="log" aria-label="Conversation" aria-relevant="additions text">
+          <article class="message-row assistant-message" data-welcome>
+            <div class="message-avatar" aria-hidden="true">N</div>
+            <div class="message-stack">
+              <span class="message-sender">NurtureNest <span>·</span> companion</span>
+              <div class="message-bubble welcome-bubble">
+                <p>Hello. I’m here with you through the questions, small moments, and big feelings that may come with pregnancy and life after birth.</p>
+                <p>We can talk, or look at general information together. What’s on your mind today?</p>
+              </div>
+              <span class="message-time">Just now</span>
+            </div>
+          </article>
+        </div>
+
+        <form class="composer" id="chat-form">
+          <label class="sr-only" for="message-input">Your message</label>
+          <textarea id="message-input" name="message" rows="1" maxlength="2000" placeholder="Write what’s on your mind…" autocomplete="off" required></textarea>
+          <div class="composer-footer">
+            <span class="composer-hint">Enter to send <span>·</span> Shift + Enter for a new line</span>
+            <div class="composer-actions"><span class="character-count" id="character-count">0 / 2000</span><button class="send-button" id="send-button" type="submit" disabled><span>Send</span><span aria-hidden="true">↗</span></button></div>
+          </div>
+        </form>
+      </section>
+
+      <aside class="companion-rail" aria-labelledby="rail-title">
+        <div class="rail-edition"><span>YOUR MATERNITY COMPANION</span><span aria-hidden="true">NN / 01</span></div>
+        <p class="overline">PREGNANCY · BIRTH · POSTPARTUM</p>
+        <h1 id="rail-title">There’s room for every question.</h1>
+        <p class="rail-copy">Big feelings, tiny details, and the things you’re not sure how to ask—all welcome here.</p>
+
+        <section class="conversation-starters" aria-labelledby="starters-title">
+          <div class="section-title"><span id="starters-title">Pick a place to begin</span></div>
+          <button type="button" class="starter" data-prompt="What can I expect from prenatal checkups?">
+            <span class="starter-icon visits" aria-hidden="true">01</span><span>Prenatal checkups</span><span class="starter-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="starter" data-prompt="I want to talk about getting ready for birth.">
+            <span class="starter-icon birth" aria-hidden="true">02</span><span>Getting ready for birth</span><span class="starter-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="starter" data-prompt="What kinds of support may help after birth?">
+            <span class="starter-icon after" aria-hidden="true">03</span><span>After the birth</span><span class="starter-arrow" aria-hidden="true">↗</span>
+          </button>
+        </section>
+
+        <div class="urgent-strip">
+          <span class="urgent-icon" aria-hidden="true">!</span>
+          <div><strong>Something feels urgent?</strong><p>Seek immediate medical care for severe symptoms. Contact local emergency services or go to the nearest emergency department.</p></div>
+        </div>
+        <p class="privacy-note">No account or saved chat history. If Gemini is enabled, messages are sent to Google to generate replies. Avoid sharing identifying details.</p>
+      </aside>
+    </main>
+
+    <footer class="page-footer"><span>Supportive conversation, not diagnosis or treatment.</span><span>For personal care, speak with your maternity-care team.</span></footer>
+  </div>
+</body>
+</html>
