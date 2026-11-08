@@ -17,7 +17,7 @@ except ImportError:  # pragma: no cover - Vercel dependency installation handles
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 KB_FILE = os.path.join(BASE_DIR, "knowledge_base.json")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AQ.Ab8RN6LYM05FAGdvZfJwfbRs80QY78nDiQSL97UKkt7yYeePWg")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 GEMINI_BASE_URL = os.environ.get(
     "GEMINI_BASE_URL",
